@@ -50,7 +50,7 @@ class zabbixagent::params {
   $unsafe_user_parameters  = undef
   $user_parameter          = undef
   $user                    = undef
-  $version                 = '3.2'
+  $version                 = '4.0'
 
   # this isn't a parameter but, since this class is inherited by all classes
   # it is a good place to put this message so that it's the same everywhere
@@ -87,7 +87,9 @@ class zabbixagent::params {
         '2.4'   => 'zabbix24-agent',
         '3.0'   => 'zabbix30-agent',
         '3.2'   => 'zabbix32-agent',
-        default => 'zabbix32-agent',
+        '3.4'   => 'zabbix34-agent',
+        '4.0'   => 'zabbix40-agent',
+        default => 'zabbix40-agent',
       }
     }
 

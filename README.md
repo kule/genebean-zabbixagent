@@ -271,8 +271,11 @@ Type: string
 Determines what version of the Zabbix Agent to install.  
 Default: '3.2'  
 Allowed values: '3.2', '3.0', or '2.4'  
+Default: '4.0'
+Allowed values: '4.0', '3.4', '3.2', '3.0', or '2.4'
 Type: string
-
+_Note: on Windows hosts this value is ignored;
+ the latest version in chocolatey will be installed on first run_
 
 ## Usage
 

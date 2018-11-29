@@ -221,8 +221,8 @@
 #
 # **version**
 # Determines what version of the Zabbix Agent to install.
-# Default: '3.2'
-# Allowed values: '3.2', '3.0', or '2.4'
+# Default: '4.0'
+# Allowed values: '4.0', '3.4', 3.2', '3.0', or '2.4'
 # Type: string
 #
 # Sample Usage: see README.md
@@ -333,7 +333,7 @@ class zabbixagent (
     fail('$servers_active must be either a string or an array')
   }
 
-  if !($version in [ '2.4', '3.0', '3.2' ]) {
+  if !($version in [ '2.4', '3.0', '3.2', '3.4', '4.0' ]) {
     fail("Zabbix ${version} is not supported but PR's are welcome.")
   }
 

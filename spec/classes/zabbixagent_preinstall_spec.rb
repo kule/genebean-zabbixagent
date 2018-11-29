@@ -17,12 +17,12 @@ describe 'zabbixagent::preinstall' do
       "class {'zabbixagent':
         manage_repo_zabbix => true,
         manage_repo_epel   => true,
-        version            => '3.2',
+        version            => '4.0',
       }"
     end
 
     it 'should create zabbix.repo' do
-      should contain_file('/etc/yum.repos.d/zabbix.repo').with_content(/baseurl=http:\/\/repo.zabbix.com\/zabbix\/3.2\/rhel\/7\/\$basearch\//)
+      should contain_file('/etc/yum.repos.d/zabbix.repo').with_content(/baseurl=http:\/\/repo.zabbix.com\/zabbix\/4.0\/rhel\/7\/\$basearch\//)
       should contain_file('/etc/yum.repos.d/zabbix.repo').with_content(/gpgkey=http:\/\/repo.zabbix.com\/RPM-GPG-KEY-ZABBIX-A14FE591/)
     end
 
@@ -47,12 +47,12 @@ describe 'zabbixagent::preinstall' do
       "class {'zabbixagent':
         manage_repo_zabbix => true,
         manage_repo_epel   => true,
-        version            => '3.2',
+        version            => '4.0',
       }"
     end
 
     it 'should create zabbix.repo' do
-      should contain_file('/etc/yum.repos.d/zabbix.repo').with_content(/baseurl=http:\/\/repo.zabbix.com\/zabbix\/3.2\/rhel\/5\/\$basearch\//)
+      should contain_file('/etc/yum.repos.d/zabbix.repo').with_content(/baseurl=http:\/\/repo.zabbix.com\/zabbix\/4.0\/rhel\/5\/\$basearch\//)
       should contain_file('/etc/yum.repos.d/zabbix.repo').with_content(/gpgkey=http:\/\/repo.zabbix.com\/RPM-GPG-KEY-ZABBIX-A14FE591-EL5/)
     end
 
@@ -76,12 +76,12 @@ describe 'zabbixagent::preinstall' do
     let :pre_condition do
       "class {'zabbixagent':
         manage_repo_zabbix => true,
-        version            => '3.2',
+        version            => '4.0',
       }"
     end
 
     it 'should create zabbix.list' do
-      should contain_file('/etc/apt/sources.list.d/zabbix.list').with_content(/deb http:\/\/repo.zabbix.com\/zabbix\/3.2\/ubuntu trusty main/)
+      should contain_file('/etc/apt/sources.list.d/zabbix.list').with_content(/deb http:\/\/repo.zabbix.com\/zabbix\/4.0\/ubuntu trusty main/)
     end
   end
 
@@ -99,12 +99,12 @@ describe 'zabbixagent::preinstall' do
     let :pre_condition do
       "class {'zabbixagent':
         manage_repo_zabbix => true,
-        version            => '3.2',
+        version            => '4.0',
       }"
     end
 
     it 'should create zabbix.list' do
-      should contain_file('/etc/apt/sources.list.d/zabbix.list').with_content(/deb http:\/\/repo.zabbix.com\/zabbix\/3.2\/ubuntu xenial main/)
+      should contain_file('/etc/apt/sources.list.d/zabbix.list').with_content(/deb http:\/\/repo.zabbix.com\/zabbix\/4.0\/ubuntu xenial main/)
     end
   end
 
@@ -122,12 +122,12 @@ describe 'zabbixagent::preinstall' do
     let :pre_condition do
       "class {'zabbixagent':
         manage_repo_zabbix => true,
-        version            => '3.2',
+        version            => '4.0',
       }"
     end
 
     it 'should create zabbix.list' do
-      should contain_file('/etc/apt/sources.list.d/zabbix.list').with_content(/deb http:\/\/repo.zabbix.com\/zabbix\/3.2\/debian wheezy main/)
+      should contain_file('/etc/apt/sources.list.d/zabbix.list').with_content(/deb http:\/\/repo.zabbix.com\/zabbix\/4.0\/debian wheezy main/)
     end
   end
 
@@ -145,12 +145,12 @@ describe 'zabbixagent::preinstall' do
     let :pre_condition do
       "class {'zabbixagent':
         manage_repo_zabbix => true,
-        version            => '3.2',
+        version            => '4.0',
       }"
     end
 
     it 'should create zabbix.list' do
-      should contain_file('/etc/apt/sources.list.d/zabbix.list').with_content(/deb http:\/\/repo.zabbix.com\/zabbix\/3.2\/debian jessie main/)
+      should contain_file('/etc/apt/sources.list.d/zabbix.list').with_content(/deb http:\/\/repo.zabbix.com\/zabbix\/4.0\/debian jessie main/)
     end
   end
 
@@ -190,7 +190,7 @@ describe 'zabbixagent::preinstall' do
     let :pre_condition do
       "class {'zabbixagent':
         manage_repo_zabbix => true,
-        version            => '3.2',
+        version            => '4.0',
       }"
     end
 

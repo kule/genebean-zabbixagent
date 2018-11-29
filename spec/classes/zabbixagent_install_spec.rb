@@ -50,7 +50,7 @@ describe 'zabbixagent::install' do
     let :pre_condition do
       "class {'zabbixagent':
         manage_repo_zabbix => true,
-        version            => '3.2',
+        version            => '4.0',
       }"
     end
     let :facts do
@@ -63,8 +63,8 @@ describe 'zabbixagent::install' do
     end
 
     # Make sure package will be installed.
-    it { should contain_package('zabbix32-agent').with_ensure('present') }
-    it { should contain_package('zabbix32-agent').with_name('zabbix32-agent') }
+    it { should contain_package('zabbix40-agent').with_ensure('present') }
+    it { should contain_package('zabbix40-agent').with_name('zabbix40-agent') }
 
   end
 
@@ -73,7 +73,7 @@ describe 'zabbixagent::install' do
     let :pre_condition do
       "class {'zabbixagent':
         manage_repo_zabbix => true,
-        version            => '3.2',
+        version            => '4.0',
       }"
     end
     let :facts do
@@ -86,8 +86,8 @@ describe 'zabbixagent::install' do
     end
 
     # Make sure package will be installed.
-    it { should contain_package('zabbix32-agent').with_ensure('present') }
-    it { should contain_package('zabbix32-agent').with_name('zabbix32-agent') }
+    it { should contain_package('zabbix40-agent').with_ensure('present') }
+    it { should contain_package('zabbix40-agent').with_name('zabbix40-agent') }
 
   end
 end
